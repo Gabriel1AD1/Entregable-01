@@ -1,13 +1,14 @@
 package com.entel.app.usecase;
 
+import com.entel.app.port.input.LoginUseCase;
 import com.entel.domain.service.LoginService;
 
 // Aplicación
-public class LoginUseCase implements com.entel.app.port.input.LoginUseCase {
+public class LoginUseCaseImpl implements LoginUseCase {
 
     private final LoginService loginService;
 
-    public LoginUseCase(LoginService loginService) {
+    public LoginUseCaseImpl(LoginService loginService) {
         this.loginService = loginService;
     }
 

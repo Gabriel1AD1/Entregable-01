@@ -1,18 +1,17 @@
 package com.entel.app.usecase;
 
-import com.entel.app.port.out.ActualizarDisponibilidadService;
 import com.entel.domain.models.Vuelo;
 import com.entel.domain.repository.VueloRepository;
 import lombok.AllArgsConstructor;
 
 // Capa de Aplicación
 @AllArgsConstructor
-public class ActualizarDisponibilidadServiceImpl {
+public class ActualizarDisponibilidadService {
 
     private VueloRepository vueloRepository;
 
     // Inyección de dependencias
-    public void ActualizarDisponibilidadService(VueloRepository vueloRepository) {
+    public void actualizarDisponibilidadService(VueloRepository vueloRepository) {
         this.vueloRepository = vueloRepository;
     }
     // Método para actualizar la disponibilidad

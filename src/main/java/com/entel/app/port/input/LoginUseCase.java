@@ -1,4 +1,6 @@
 package com.entel.app.port.input;
 
-public class LoginUseCase {
+public interface LoginUseCase {
+    boolean ejecutar(String username, String password);
+
 }

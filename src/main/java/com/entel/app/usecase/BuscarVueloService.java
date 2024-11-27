@@ -1,6 +1,5 @@
 package com.entel.app.usecase;
 
-import com.entel.app.port.out.BuscarVueloService;
 import com.entel.domain.models.Vuelo;
 import com.entel.domain.repository.VueloRepository;
 import lombok.AllArgsConstructor;
@@ -9,12 +8,12 @@ import java.util.List;
 
 // Capa de Aplicación
 @AllArgsConstructor
-public class BuscarVueloServiceImpl implements BuscarVueloService {
+public class BuscarVueloService  {
 
     private VueloRepository vueloRepository;
 
     // Inyección de dependencias
-    public void BuscarVueloService(VueloRepository vueloRepository) {
+    public void buscarVueloService(VueloRepository vueloRepository) {
         this.vueloRepository = vueloRepository;
     }
 
